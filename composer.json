@@ -1,0 +1,54 @@
+{
+    "name": "hub-io/laravel-hubio-sync",
+    "description": "Backup, sharing and photo synchronization of Hubio NativePHP apps through Hubio.Space (api/sync/v1/{app}).",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "Hubio s.r.o.",
+        "laravel",
+        "nativephp",
+        "nativephp-mobile",
+        "sync",
+        "offline-first",
+        "backup",
+        "laravel-hubio-sync"
+    ],
+    "authors": [
+        {
+            "name": "Hubio s.r.o.",
+            "email": "hamrak@hubio.sk",
+            "role": "Owner"
+        },
+        {
+            "name": "Ján Hamrák",
+            "email": "hamrak@kcorp.sk",
+            "role": "Maintainer"
+        }
+    ],
+    "homepage": "https://github.com/hub-io/laravel-hubio-sync",
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0",
+        "nativephp/mobile": "^4.6"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Hubio\\Sync\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Hubio\\Sync\\HubioSyncServiceProvider"
+            ]
+        }
+    }
+}
